@@ -1,4 +1,4 @@
-__module_name__ = 'Random Kick'
+__module_name__ = 'Random Kick Plugin'
 __module_version__ = '0.2'
 __module_description__ = 'Kicks the designated user with a random kick reason, or a random user and kick reason.'
 __module_author__ = 'Jake0720 with help from Liam Stanley'

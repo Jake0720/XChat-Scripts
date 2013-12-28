@@ -5,9 +5,9 @@ __module_author__ = 'Jake0720, with a little help from Liam Stanley'
 
 import xchat
 
-help = '\x02\x0303Type /flip <message> then press enter to make it backwards.'
+help = '%sType /flip <message> then press enter to make it backwards.' % c
 
-print('\x02\x0303%s has been loaded.' % __module_name__)
+print('%s%s has been loaded.' % (c, __module_name__))
 
 def flip(word, word_eol, userdata):
     try:
@@ -16,7 +16,7 @@ def flip(word, word_eol, userdata):
         xchat.prnt(help)
 
 def onUnload(userdata):
-    xchat.prnt('\x02\x0303%s has been unloaded.' % __module_name__)
+    xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))
 
 xchat.hook_command('flip', flip, help=help)
 xchat.hook_unload(onUnload)

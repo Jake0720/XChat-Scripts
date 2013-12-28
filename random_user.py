@@ -5,9 +5,10 @@ __module_author__ = 'Liam Stanley'
 
 import xchat, random
 
+c = '\x02\x0303'
 help = 'Type /ruser then press enter to find a random user in the given channel.'
 
-print('%s has been loaded.' % __module_name__)
+print('%s%s has been loaded.' % (c, __module_name__))
 
 def get_random(word, word_eol, userdata):
     try:
@@ -20,7 +21,7 @@ def get_random(word, word_eol, userdata):
         xchat.prnt(help)
 
 def onUnload(userdata):
-    xchat.prnt('%s has been unloaded.' % __module_name__)
+    xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))
 
 xchat.hook_command('ruser', get_random, help=help)
 xchat.hook_unload(onUnload)

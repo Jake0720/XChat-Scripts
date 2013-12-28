@@ -1,7 +1,7 @@
 __module_name__ = 'Backwards Text'
 __module_version__ = '0.1'
 __module_description__ = 'Turns your text backwards.'
-__module_author__ = 'Jake0720, with a little help of Liam Ray Stanley'
+__module_author__ = 'Jake0720, with a little help of Liam Stanley'
 
 import xchat
 

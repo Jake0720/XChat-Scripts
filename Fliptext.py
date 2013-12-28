@@ -1,5 +1,5 @@
 __module_name__ = 'Flip Text'
-__module_version__ = '0.1'
+__module_version__ = '0.2'
 __module_description__ = 'Inverts your text!'
 __module_author__ = 'Jake0720, with a little help from Liam Stanley'
 

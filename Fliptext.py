@@ -1,13 +1,13 @@
 __module_name__ = 'Flip Text'
-__module_version__ = '0.2'
+__module_version__ = '0.1'
 __module_description__ = 'Inverts your text!'
 __module_author__ = 'Jake0720, with a little help from Liam Stanley'
 
 import xchat
 
-help = 'Type /flip <message> then press enter to make it backwards.'
+help = '\x02\x0303Type /flip <message> then press enter to make it backwards.'
 
-print('%s has been loaded.' % __module_name__)
+print('\x02\x0303%s has been loaded.' % __module_name__)
 
 def flip(word, word_eol, userdata):
     try:
@@ -16,7 +16,7 @@ def flip(word, word_eol, userdata):
         xchat.prnt(help)
 
 def onUnload(userdata):
-    xchat.prnt('%s has been unloaded.' % __module_name__)
+    xchat.prnt('\x02\x0303%s has been unloaded.' % __module_name__)
 
 xchat.hook_command('flip', flip, help=help)
 xchat.hook_unload(onUnload)

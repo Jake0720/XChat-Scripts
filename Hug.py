@@ -1,5 +1,5 @@
 __module_name__ = 'Hug Plugin'
-__module_version__ = '0.2'
+__module_version__ = '0.3'
 __module_description__ = 'Hug someone with a command!'
 __module_author__ = 'Jake0720 with help from Liam Stanley'
 

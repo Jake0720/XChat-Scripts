@@ -5,6 +5,7 @@ __module_author__ = 'Jake0720, with a little help from Liam Stanley'
 
 import xchat
 
+c = '\x02\x0303'
 help = '%sType /flip <message> then press enter to make it backwards.' % c
 
 print('%s%s has been loaded.' % (c, __module_name__))

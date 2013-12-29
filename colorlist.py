@@ -8,6 +8,21 @@ import xchat
 c = '\x02\x0303'
 help = 'Type /colors to see a list of colors.'
 
+def bar(max,colors,sign=False):
+    if not sign:
+        symbol = '#'
+    else:
+        symbol = sign
+    bar = max*symbol
+    print bar
+    # Now, loop over each item in the list, and pad accordingly
+    for key, id in colors.iteritems():
+        data = str.center('\x02\x03{id}{color}\x03 | {id}\x02'.format(color=key, id=id), max+4)
+        print '%s%s%s' % (symbol, data, symbol)
+    print bar
+
+
+
 def color_list(word, word_eol, userdata):
     colors = {'Black':'01',
               'Navy Blue':'02',
@@ -25,15 +40,10 @@ def color_list(word, word_eol, userdata):
               'Dark Gray':'14',
               'Light Gray':'15',
               'White':'16'}
-    try:
-        xchat.prnt('%s~~~~~~~~~~~~~~~~~' % c)
-        
-        for key, value in colors.iteritems():
-            xchat.prnt('\x02\x03{id}{key}\x03 | {id}'.format(id=value, key=key))
-            
-        xchat.prnt('%s~~~~~~~~~~~~~~~~~' % c)
-    except:
-        xchat.prnt(help)
+    #try:
+    bar(20, colors,'+') # Keep in mind, first integer needs to be even
+    #except:
+    #    xchat.prnt(help)
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

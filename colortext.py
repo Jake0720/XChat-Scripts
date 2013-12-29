@@ -1,7 +1,7 @@
 __module_name__ = 'Color Text'
-__module_version__ = '0.1'
+__module_version__ = '0.2'
 __module_description__ = 'Another way to type in colors, if you find it more difficult with Ctrl + K. (Only works for one color)'
-__module_author__ = 'Jake0720'
+__module_author__ = 'Jake0720 with help from the Herpderp monster.'
 
 import xchat
 

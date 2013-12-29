@@ -7,22 +7,14 @@ import xchat
 
 # Color abbreviations
 c = {
-        'b': ['01', 'Black'],
-        'nb': ['02', 'Navy Blue'],
-        'g': ['03', 'Green'],
-        'r': ['04', 'Red'],
-        'br': ['05', 'Brown'],
-        'v': ['06', 'Violet/Purple'],
-        'o': ['07', 'Olive/Gold'],
-        'y': ['08', 'Yellow'],
-        'lmg': ['09', 'Lime Green'],
-        't': ['10', 'Teal'],
-        'a': ['11', 'Aqua'],
-        'rb': ['12', 'Royal Blue'],
-        'p': ['13', 'Pink'],
-        'dg': ['14', 'Dark Grey'],
-        'lg': ['15', 'Light Grey'],
-        'w': ['16', 'White']
+        'b': ['01', 'Black'], 'nb': ['02', 'Navy Blue'],
+        'g': ['03', 'Green'], 'r': ['04', 'Red'],
+        'br': ['05', 'Brown'], 'v': ['06', 'Violet/Purple'],
+        'o': ['07', 'Olive/Gold'], 'y': ['08', 'Yellow'],
+        'lmg': ['09', 'Lime Green'], 't': ['10', 'Teal'],
+        'a': ['11', 'Aqua'], 'rb': ['12', 'Royal Blue'],
+        'p': ['13', 'Pink'], 'dg': ['14', 'Dark Grey'],
+        'lg': ['15', 'Light Grey'], 'w': ['16', 'White']
     }
 loadc = '\x03%s' % c['v'][0]
 help = 'To use, type \x03%s/c <color abbreviation> <message>\x0f.\nColor abbreviations:\n' % c['rb'][0]

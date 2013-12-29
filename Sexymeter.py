@@ -6,7 +6,6 @@ __module_author__ = 'Jake0720 with help from Liam Stanley'
 import xchat
 from random import randint as rand
 
-xchat.prnt(__module_name__+' has been loaded.')
 c = '\x02\x0303'
 help = '%sType /sm to see your sexiness on a scale from 0 to 100.' % c
 print('%s%s has been loaded.' % (c, __module_name__))

@@ -9,27 +9,27 @@ c = '\x02\x0303'
 help = 'Type /colors to see a list of colors.'
 
 def color_list(word, word_eol, userdata):
-    colors = {'\x0301Black':'01',
-              '\x0302Navy Blue':'02',
-              '\x0303Green':'03',
-              '\x0304Red':'04',
-              '\x0305Brown':'05',
-              '\x0306Purple':'06',
-              '\x0307Olive':'07',
-              '\x0308Yellow':'08',
-              '\x0309Lime Green':'09',
-              '\x0310Teal':'10',
-              '\x0311Aqua':'11',
-              '\x0312Royal Blue':'12',
-              '\x0313Pink':'13',
-              '\x0314Dark Gray':'14',
-              '\x0315Light Gray':'15',
-              '\x0316White':'16'}
+    colors = {'Black':'01',
+              'Navy Blue':'02',
+              'Green':'03',
+              'Red':'04',
+              'Brown':'05',
+              'Purple':'06',
+              'Olive':'07',
+              'Yellow':'08',
+              'Lime Green':'09',
+              'Teal':'10',
+              'Aqua':'11',
+              'Royal Blue':'12',
+              'Pink':'13',
+              'Dark Gray':'14',
+              'Light Gray':'15',
+              'White':'16'}
     try:
         xchat.prnt('%s~~~~~~~~~~~~~~~~~' % c)
         
         for key, value in colors.iteritems():
-            xchat.prnt('%s | %s' % (key, value))
+            xchat.prnt('\x02\x03{id}{key}\x03 | {id}'.format(id=value, key=key))
             
         xchat.prnt('%s~~~~~~~~~~~~~~~~~' % c)
     except:

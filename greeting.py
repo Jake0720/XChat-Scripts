@@ -13,7 +13,7 @@ def on_join(word, word_eol, userdata):
     nick, channel = word[0], word[1]
     destination = xchat.get_context()
     if channel in channels:
-        destination.command('say Hello %s, welcome to %s!' % (tnick, tchannel))
+        destination.command('say Hello %s, welcome to %s!' % (nick, channel))
     else:
         return
 

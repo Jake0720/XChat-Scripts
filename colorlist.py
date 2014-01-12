@@ -16,7 +16,9 @@ def bar(max,colors,sign=False):
     bar = max*symbol
     print bar
     # Now, loop over each item in the list, and pad accordingly
-    for key, id in colors.iteritems():
+    sort_colors = [x for x in colors.iteritems()]
+    sort_colors.sort(key=lambda x: x[1])
+    for key, id in sort_colors:
         data = str.center('\x02\x03{id}{color}\x03 | {id}\x02'.format(color=key, id=id), max+4)
         print '%s%s%s' % (symbol, data, symbol)
     print bar

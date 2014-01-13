@@ -1,5 +1,5 @@
 __module_name__ = 'Color List'
-__module_version__ = '0.1'
+__module_version__ = '0.2'
 __module_description__ = 'Lists the available colors.'
 __module_author__ = 'Jake0720'
 

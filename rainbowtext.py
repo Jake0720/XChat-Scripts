@@ -5,6 +5,7 @@ import re
 __module_name__ = 'Rainbows'
 __module_version__ = '1.0'
 __module_description__ = 'Turns your text into a colorful mess.'
+__module_author__ = 'Unknown, I could not find the source.'
 
 hexchat.prnt('Rainbows script loaded')
 fabhelp = 'To use, type \x0309/fab <message>\x0f, and the message will be rainbowfied.'

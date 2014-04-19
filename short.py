@@ -53,6 +53,8 @@ def send_message(word, word_eol, userdata):
             msg = msg.replace(url, str(data))
         except: continue
     xchat.command("settext %s" % msg)
+    
+    return xchat.EAT_ALL
 
 def short(word, word_eol, userdata):
     """shortens the url passed as an arguement."""
@@ -75,6 +77,8 @@ def short(word, word_eol, userdata):
             xchat.command('say %s' % new)
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def prefs(job, args=None):
     """Saves|Gets preferences."""

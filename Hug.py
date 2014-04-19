@@ -20,6 +20,8 @@ def hug(word, word_eol, userdata):
         xchat.command('me gives \x02%s\x02 %s' % (word[1], response))
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

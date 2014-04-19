@@ -17,6 +17,8 @@ def random_ping(word, word_eol, userdata):
         return xchat.command('say %s' % nicks.nick)
     except:
         return xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

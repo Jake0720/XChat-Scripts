@@ -21,6 +21,8 @@ def md5(word, word_eol, userdata):
         xchat.command('say %s' % md5)
     except:
         xchat.prnt(help)
+    
+    return xchat.EAT_ALL
         
 def sha1(word, word_eol, userdata):
     try:
@@ -30,6 +32,8 @@ def sha1(word, word_eol, userdata):
         xchat.command('say %s' % sha1)
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def sha256(word, word_eol, userdata):
     try:
@@ -39,6 +43,8 @@ def sha256(word, word_eol, userdata):
         xchat.command('say %s' % sha256)
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def sha512(word, word_eol, userdata):
     try:
@@ -48,6 +54,8 @@ def sha512(word, word_eol, userdata):
         xchat.command('say %s' % sha512)
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s, Version %s has been unloaded.' % (c, __module_name__, __module_version__))

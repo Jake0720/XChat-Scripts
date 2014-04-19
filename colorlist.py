@@ -46,6 +46,8 @@ def color_list(word, word_eol, userdata):
     bar(20, colors,'+') # Keep in mind, first integer needs to be even
     #except:
     #    xchat.prnt(help)
+    
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

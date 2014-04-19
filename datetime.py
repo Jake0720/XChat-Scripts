@@ -36,6 +36,8 @@ def time(word, word_eol, userdata):
         if word[1].lower() == 'say':
             return xchat.command('say The current time is: %s%s:%s' % (c, hour, minute))
         return xchat.prnt(timehelp)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s, Version: %s has been unloaded.' % (c, __module_name__, __module_version__))

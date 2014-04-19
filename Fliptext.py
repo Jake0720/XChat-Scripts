@@ -15,6 +15,8 @@ def flip(word, word_eol, userdata):
         xchat.command('say %s' % word_eol[1][::-1])
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

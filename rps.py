@@ -30,6 +30,8 @@ def rps(word, word_eol, userdata):
     elif word[1].lower() == 'paper' and randomChoice == 'rock': print('%s%sYou won!' % (answer, c))
     elif word[1].lower() == 'paper' and randomChoice == 'scissors': print('%s%sYou lose!' % (answer, c))
     else: return xchat.prnt(help)
+    
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

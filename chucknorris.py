@@ -19,6 +19,8 @@ def cn(word, word_eol, userdata):
             return xchat.prnt(help)
         data = json.loads(a)
         xchat.command('say %s' % h.unescape(data['value']['joke']))
+        
+        return xchat.EAT_ALL
 
 def onUnload(userdata):
         xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

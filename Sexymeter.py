@@ -31,6 +31,8 @@ def sexymeter(word, word_eol, userdata):
     elif sexyness >= 5: r = 'Mirrors have been shattered'
     else: r = 'Holy shit, you\'re ugly'
     return xchat.command('say \x02SEXYMETER:\x02 \x0306%s \x0304\x02%s %s' % (str(sexyness) + '%', r, user))
+    
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

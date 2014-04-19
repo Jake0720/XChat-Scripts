@@ -39,6 +39,8 @@ def coloredChat(word, word_eol, userdata):
         return xchat.command('say \x03{color}{msg}'.format(color=c[color][0], msg=word_eol[2]))
     except:
         return xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (loadc, __module_name__))

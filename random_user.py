@@ -19,6 +19,8 @@ def get_random(word, word_eol, userdata):
         print '\x02User found! Username: \x0303%s\x0304%s\x03 (Connected via "\x0304%s\x03")\x02' % (selection.prefix, selection.nick, selection.host)
     except:
         xchat.prnt(help)
+        
+    return xchat.EAT_ALL
 
 def onUnload(userdata):
     xchat.prnt('%s%s has been unloaded.' % (c, __module_name__))

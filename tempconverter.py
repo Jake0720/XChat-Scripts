@@ -34,7 +34,7 @@ def Converter(word, word_eol, userdata):
             return 'Error'
     else:
         return 'Error'
-    hexchat.EAT_ALL
+    return hexchat.EAT_ALL
 
 def unload(userdata):
     hexchat.prnt('\x0304{0} has been unloaded.'.format(__module_name__))

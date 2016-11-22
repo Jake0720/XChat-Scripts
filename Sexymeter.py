@@ -24,6 +24,7 @@ def sexymeter(word, word_eol, userdata):
     if sexyness == 100: r = 'Damn, you\'re so gorgeous you\'re fuckable'
     elif sexyness >= 95: r = 'Damn, you\'re super sexy'
     elif sexyness >= 80: r = 'Pretty sexy'
+    elif sexyness == 69: r = 'The ultimate sexiness, '
     elif sexyness >= 65: r = 'Not bad'
     elif sexyness >= 50: r = 'Could be better..'
     elif sexyness >= 35: r = 'Eh..'
